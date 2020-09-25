@@ -1,0 +1,68 @@
+/* палитра цветов */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+
+/* body */
+body {
+  color: var(--primary-text-color);
+  background: var(--primary-white-color);
+}
+
+/* title */
+.title {
+  color: var(--title-text-color);
+}
+
+/* logo */
+.logo-blue {
+  color: var(--accent-color);
+}
+.logo-black {
+  color: var(--title-text-color);
+}
+
+.logo {
+  color: var(--primary-white-color);
+}
+
+/* links header*/
+.header-link {
+  color: var(--title-text-color);
+}
+
+.header-link:hover,
+.header-link:focus,
+.header-link.contacts:hover,
+.header-link.contacts:focus {
+  color: var(--accent-color);
+}
+
+.header-link.contacts {
+  color: #757575;
+}
+
+/* button */
+.button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
+/* footer links */
+
+.contact-address {
+  color: var(--primary-white-color);
+}
+
+.us-contact {
+  color: rgba(250, 250, 250, 0.6);
+}
