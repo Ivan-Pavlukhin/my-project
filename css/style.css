@@ -10,28 +10,51 @@
 body {
   color: var(--primary-text-color);
   background: var(--primary-white-color);
+  font-weight: 400;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
+/* li */
+.li {
+  list-style-type: none;
+}
 /* title */
 .title {
   color: var(--title-text-color);
 }
 
 /* logo */
-.logo-blue {
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo.accent {
   color: var(--accent-color);
 }
-.logo-black {
+.logo .black {
   color: var(--title-text-color);
 }
 
-.logo {
+.logo .white {
   color: var(--primary-white-color);
 }
 
 /* links header*/
+
 .header-link {
   color: var(--title-text-color);
+}
+
+.header-link,
+.header-link.contacts {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .header-link:hover,
@@ -41,27 +64,61 @@ body {
   color: var(--accent-color);
 }
 
-.header-link.contacts {
-  color: #757575;
-}
-/* header */
+/* hero */
 .hero {
   background: #2f303a;
   color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* button */
 .button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-transform: none;
 }
 
-.button:hover,
-.button:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
+/* advantages */
+
+.advanteges-items .title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
+/* section title */
+
+.features .title,
+.our-team .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* our team */
+
+.item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: #212121;
+}
+
+.our-team .text {
+  font-size: 16px;
+  line-height: 1.19;
+}
 /* footer */
 
 .contact-address {
@@ -74,4 +131,45 @@ body {
 
 footer {
   background-color: #2f303a;
+}
+
+/* portfolio */
+
+.button-filter {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  background-color: var(--accent-color);
+}
+
+.projects .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+}
+
+.projects .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+
+  letter-spacing: 0.03em;
 }

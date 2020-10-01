@@ -4,23 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- header -->
     <header>
       <nav>
-        <ul>
+        <ul class="li">
           <li>
-            <a href="/" class="logo-blue"
-              >Web<span class="logo-black">Studio</span></a
+            <a href="/" class="logo accent"
+              >Web<span class="black">Studio</span></a
             >
           </li>
-          <li><a href="/" class="header-link">Студия</a></li>
+          <li><a href="./index.html" class="header-link">Студия</a></li>
           <li><a href="/" class="header-link">Портфолио</a></li>
           <li><a href="/" class="header-link">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="li">
           <li>
             <a href="/" class="header-link contacts">info@devstudio.com</a>
           </li>
@@ -32,14 +40,22 @@
     </header>
     <!--  -->
     <section>
-      <ul>
-        <li><a href="">Все</a></li>
-        <li><a href="">Веб-сайты</a></li>
-        <li><a href="">Приложения</a></li>
-        <li><a href="">Дизайн</a></li>
-        <li><a href="">Маркетинг</a></li>
+      <ul class="li">
+        <li><button type="button-filter" class="button-filter">Все</button></li>
+        <li>
+          <button type="button-filter" class="button-filter">Веб-сайты</button>
+        </li>
+        <li>
+          <button type="button-filter" class="button-filter">Приложения</button>
+        </li>
+        <li>
+          <button type="button-filter" class="button-filter">Дизайн</button>
+        </li>
+        <li>
+          <button type="button-filter" class="button-filter">Маркетинг</button>
+        </li>
       </ul>
-      <ul>
+      <ul class="li projects">
         <li>
           <img
             src="./img/img.jpg"
@@ -47,39 +63,39 @@
             width="370"
           />
           <h2 class="title">Технокряк</h2>
-          <p>Веб-сайт</p>
+          <p class="text">Веб-сайт</p>
         </li>
         <li>
           <img src="./img/img(1).jpg" alt="два баскетболиста" width="370" />
           <h2 class="title">
             Постер <span lang="en">New Orlean vs Golden Star</span>
           </h2>
-          <p>Дизайн</p>
+          <p class="text">Дизайн</p>
         </li>
         <li>
           <img src="./img/img(2).jpg" alt="рыба" width="370" />
           <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
-          <p>Приложение</p>
+          <p class="text">Приложение</p>
         </li>
         <li>
           <img src="./img/img(3).jpg" alt="наушники" width="370" />
           <h2 class="title">Проект <span lang="en">Prime</span></h2>
-          <p>Маркетинг</p>
+          <p class="text">Маркетинг</p>
         </li>
         <li>
           <img src="./img/img(4).jpg" alt="две коробочки" width="370" />
           <h2 class="title">Проект <span lang="en">Boxes</span></h2>
-          <p>Приложение</p>
+          <p class="text">Приложение</p>
         </li>
         <li>
           <img src="./img/img(5).jpg" alt="компьютер с сайтом" width="370" />
           <h2 class="title" span lang="en">Inspiration has no Borders</h2>
-          <p>Веб-сайт</p>
+          <p class="text">Веб-сайт</p>
         </li>
         <li>
           <img src="./img/img(6).jpg" alt="журнал" width="370" />
           <h2 class="title">Издание <span lang="en">Limited Edition</span></h2>
-          <p>Дизайн</p>
+          <p class="text">Дизайн</p>
         </li>
         <li>
           <img
@@ -88,22 +104,22 @@
             width="370"
           />
           <h2 class="title">Проект LAB</h2>
-          <p>Маркетинг</p>
+          <p class="text">Маркетинг</p>
         </li>
         <li>
           <img src="./img/img(8).jpg" alt="ноутбук с приложением" width="370" />
           <h2 class="title">Growing Business</h2>
-          <p>Приложение</p>
+          <p class="text">Приложение</p>
         </li>
       </ul>
     </section>
     <!-- footer -->
     <footer>
-      <a href="/" class="logo-blue">Web<span class="logo">Studio</span></a>
+      <a href="/" class="logo accent">Web<span class="white">Studio</span></a>
       <address>
         <a href="/" class="contact-address">г. Киев, пр-т Леси Украинки, 26</a>
       </address>
-      <ul>
+      <ul class="li" class="button-filter">
         <li><a href="/" class="us-contact">info@example.com</a></li>
         <li><a href="/" class="us-contact">+38 099 111 11 11</a></li>
       </ul>
