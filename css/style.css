@@ -17,10 +17,30 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 15px;
+}
+
 /* li */
 .li {
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* title */
 .title {
   color: var(--title-text-color);
@@ -46,6 +66,11 @@ body {
 
 /* links header*/
 
+.header .container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .header-link {
   color: var(--title-text-color);
 }
@@ -67,7 +92,6 @@ body {
 /* hero */
 .hero {
   background: #2f303a;
-  color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -77,7 +101,22 @@ body {
   text-transform: uppercase;
 }
 
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 200px;
+  padding-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
+
 .button {
+  display: inline-block;
+  padding: 10px 32px;
+  margin-bottom: 200px;
+
+  border-radius: 4px;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: bold;
@@ -89,13 +128,30 @@ body {
 
 /* advantages */
 
+.advantages .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .advanteges-items .title {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-/* section title */
+.advanteges-items p {
+  padding-top: 10px;
+}
+
+/* features */
+
+.features .container {
+  padding-bottom: 94px;
+}
+
+.features .title {
+  padding-bottom: 50px;
+}
 
 .features .title,
 .our-team .title {
@@ -107,10 +163,21 @@ body {
 
 /* our team */
 
-.item-title {
+.our-team {
+  background: #f5f4fa;
+}
+
+.our-team .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.our-team .item-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  padding-top: 30px;
 
   color: #212121;
 }
@@ -118,15 +185,31 @@ body {
 .our-team .text {
   font-size: 16px;
   line-height: 1.19;
+
+  padding-top: 10px;
+  padding-bottom: 30px;
 }
 /* footer */
 
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .contact-address {
   color: var(--primary-white-color);
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .us-contact {
   color: rgba(250, 250, 250, 0.6);
+  display: inline-block;
+  margin-top: 9px;
+}
+
+.footer ul {
+  padding-left: 0;
 }
 
 footer {
